@@ -1,11 +1,19 @@
 
 ## Ejecución
-descargar 
 
-en cmd ir a la carpeta del proyecto
+1. Descargar repositorio de GitHub
 
-escribir los siguientes comandos
+2. Abrir CMD en la carpeta del proyecto
 
-npm install
+3. Ejecutar el comando 'code .' para abrir el proyecto en VisualStudioCode
 
-npm start
+4. Ejecutar los siguientes comandos:
+  npm install
+  npm start
+
+5. Dirigirse a la siguiente direccion en el navegador http://localhost:4200/#/
+
+
+
+
+El proyecto se encuentra alojado en la siguiente dirección: https://brayan-davila-godigital.000webhostapp.com/#/
