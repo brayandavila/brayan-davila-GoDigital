@@ -10,6 +10,6 @@ export class AppComponent {
   title = "BrayanDavilaGoDigital";
 
   constructor(public _ms: MoviedbService) {
-    this._ms.getDiscoverMovies().subscribe(data => console.log(data));
+    this._ms.getUltimasPeliculas().subscribe(data => console.log(data));
   }
 }

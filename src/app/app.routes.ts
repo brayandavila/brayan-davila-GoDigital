@@ -6,6 +6,7 @@ import { MejorcalificadasComponent } from "./components/mejorcalificadas/mejorca
 import { MaspopularesComponent } from "./components/maspopulares/maspopulares.component";
 
 export const ROUTES: Routes = [
+  { path: "", component: UltimaspeliculasComponent },
   { path: "ultimaspeliculas", component: UltimaspeliculasComponent },
   { path: "mejorcalificadas", component: MejorcalificadasComponent },
   { path: "maspopulares", component: MaspopularesComponent },

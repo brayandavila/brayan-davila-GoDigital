@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MoviedbService } from '../../services/moviedb.service';
 @Component({
-  selector: 'app-home',
+  selector: 'app-ultimaspeliculas',
   templateUrl: './ultimaspeliculas.component.html',
   styleUrls: ['./ultimaspeliculas.component.css']
 })
