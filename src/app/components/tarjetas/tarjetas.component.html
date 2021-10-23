@@ -1,0 +1,6 @@
+<div class="wrapper">
+  <div (click)="verPelicula(item)" *ngFor="let item of items" class="puntero borde">
+    <img class="card-img-top" [src]="item | peliculaImagen" alt="Card image cap" />
+    <h6 class="card-title">{{ item.title }}</h6>
+  </div>
+</div>

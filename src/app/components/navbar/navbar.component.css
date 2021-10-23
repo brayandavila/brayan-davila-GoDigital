@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+nav{
+    background-color: #032541;
+}
+a{
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+navbar-toggler{
+    color: aliceblue;
+}

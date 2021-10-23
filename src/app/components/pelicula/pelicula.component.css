@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@1,700&display=swap');
+.imagen{
+    border-radius: 15px;
+    width: 80%;
+}
+
+.titulo{
+    font-family: 'Balsamiq Sans', cursive;
+}

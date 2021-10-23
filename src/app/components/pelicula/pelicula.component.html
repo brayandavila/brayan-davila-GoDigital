@@ -1,0 +1,34 @@
+<app-loading *ngIf="loadingPelicula"></app-loading>
+<div class="container main-container animated fadeIn fast">
+    <div class="row">
+        <div class="col-md-5">
+            <img [src]="pelicula | peliculaImagen" [alt]="pelicula.original_title" class="img-fluid imagen">
+        </div>
+        <div class="col-md-7 ficha">
+            <h1 class="titulo">{{ pelicula.title }} <h5>({{ pelicula.release_date }})</h5></h1>
+            <br>
+            <h5>Resumen</h5>
+            <p class="text-justify">
+                {{ pelicula.overview }}
+            </p>
+            <p> {{ pelicula.tagline }} </p>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h6>Título original: {{ pelicula.original_title }}</h6>
+                    </div>
+                    <div class="col">
+                        <h6>Calificación {{ pelicula.vote_average }} ({{ pelicula.vote_count }})</h6>
+                    </div>
+                    <div class="col">
+                        <h6>Popularidad: {{ pelicula.popularity }}</h6>
+                    </div>
+                    <div class="col">
+                        <h6>Lenguaje original: {{ pelicula.original_language }}</h6>
+                    </div>
+                </div>
+            </div>
+        </div>            
+    </div>
+</div>

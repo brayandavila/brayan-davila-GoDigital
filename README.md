@@ -1,2 +1,6 @@
-# brayan-davila-GoDigital
-Prueba GoDigital
+
+## Ejecución
+
+npm install
+
+npm start
