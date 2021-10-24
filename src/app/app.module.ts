@@ -9,13 +9,13 @@ import { HttpClientModule, HttpClientJsonpModule } from "@angular/common/http";
 import { AppComponent } from "./app.component";
 import { UltimaspeliculasComponent } from "./components/ultimaspeliculas/ultimaspeliculas.component";
 import { SearchComponent } from "./components/search/search.component";
-import { LoadingComponent } from "./components/shared/loading/loading.component";
 import { PeliculaComponent } from "./components/pelicula/pelicula.component";
 import { TarjetasComponent } from "./components/tarjetas/tarjetas.component";
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PeliculaImagenPipe } from './pipes/pelicula-imagen.pipe';
 import { MejorcalificadasComponent } from "./components/mejorcalificadas/mejorcalificadas.component";
 import { MaspopularesComponent } from "./components/maspopulares/maspopulares.component";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -24,7 +24,6 @@ import { MaspopularesComponent } from "./components/maspopulares/maspopulares.co
     MejorcalificadasComponent,
     MaspopularesComponent,
     SearchComponent,
-    LoadingComponent,
     PeliculaComponent,
     TarjetasComponent,
     NavbarComponent,

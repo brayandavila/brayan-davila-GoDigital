@@ -8,18 +8,14 @@ import { MoviedbService } from '../../services/moviedb.service';
 export class MejorcalificadasComponent {
 
   mejorCalificadas: any[] = [];
-  loading: boolean;
 
   constructor(private moviedb: MoviedbService) {
-
-    this.loading = true;
 
     this.moviedb.getMejorCalificadas()
       .subscribe((data: any) => {
 
         console.log(data);
         this.mejorCalificadas = data;
-        this.loading = false;
       });
 
   }

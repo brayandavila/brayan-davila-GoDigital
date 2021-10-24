@@ -12,12 +12,8 @@ export class PeliculaComponent {
   // pelicula: any;
   pelicula: any = {};
 
-  loadingPelicula: boolean;
-
   constructor(private router: ActivatedRoute,
     private moviedb: MoviedbService) {
-
-    this.loadingPelicula = true;
 
     this.router.params.subscribe(params => {
       console.log(params);
@@ -26,7 +22,6 @@ export class PeliculaComponent {
         .subscribe(pelicula => {
           console.log(pelicula);
           this.pelicula = pelicula;
-          this.loadingPelicula = false;
         })
     })
 

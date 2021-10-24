@@ -2,8 +2,14 @@
 .imagen{
     border-radius: 15px;
     width: 80%;
+    margin-left: 30px;
 }
 
 .titulo{
     font-family: 'Balsamiq Sans', cursive;
+}
+
+.container-fluid {
+    height: 100vh;
+    color: white;
 }

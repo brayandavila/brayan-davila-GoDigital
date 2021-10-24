@@ -1,10 +1,12 @@
-<app-loading *ngIf="loadingPelicula"></app-loading>
-<div class="container main-container animated fadeIn fast">
+<div class="container-fluid"
+    [ngStyle]="{'background-image': 'linear-gradient(rgba(52,41,49,0.80), 
+    rgba(0,0,0,0.85)), url('+'https://image.tmdb.org/t/p/w1280'+pelicula.backdrop_path+')'}">
+    <br><br>
     <div class="row">
-        <div class="col-md-5">
+        <div class="col-4">
             <img [src]="pelicula | peliculaImagen" [alt]="pelicula.original_title" class="img-fluid imagen">
         </div>
-        <div class="col-md-7 ficha">
+        <div class="col-7 ficha">
             <h1 class="titulo">{{ pelicula.title }} <h5>({{ pelicula.release_date }})</h5></h1>
             <br>
             <h5>Resumen</h5>
@@ -29,6 +31,7 @@
                     </div>
                 </div>
             </div>
-        </div>            
+        </div>  
+        <div col-1></div>          
     </div>
 </div>

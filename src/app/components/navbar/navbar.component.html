@@ -20,7 +20,18 @@
         <a class="nav-link" routerLink="maspopulares">Más Populares</a>
       </li>
       <li class="nav-item" routerLinkActive="active">
+          <!--<input
+          #termino
+          type="text"
+          class="form-control input-sm"
+          placeholder="Buscar Pelicula"
+          routerLink="search"
+          (keyup.enter)="onKeyUp($event)"
+        />-->
         <a class="nav-link" routerLink="search">Buscar</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link">{{text}}</a>
       </li>
     </ul>
   </div>

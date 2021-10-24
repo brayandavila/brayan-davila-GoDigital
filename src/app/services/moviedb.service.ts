@@ -25,12 +25,6 @@ export class MoviedbService {
     return this.http.jsonp(url, "");
   }
 
-  getDiscoverMovies() {
-    return this.getQuery("/discover/movie?sort_by=release_date.desc").pipe(
-      map((data: any) => data.results)
-    );
-  }
-
   getBusquedaPeliculas(termino: string) {
     return this.getQuery(
       `/search/movie?query=${termino}&sort_by=popularity.desc`
